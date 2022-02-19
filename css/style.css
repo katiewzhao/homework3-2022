@@ -98,7 +98,7 @@ a.skip{
 /* Requirement 4 code here*/
 
 nav a:focus{
-  text-decoration: none;
+  outline: none;
   border-top: 2px solid yellow;
 }
 
@@ -116,7 +116,7 @@ nav a:focus{
 
 .intro{
   background-image: url("../images/header.jpg"); 
-  background-color: #DDDDDD;
+  background-color: #B3B3B3;
   min-height: 400px;
   background-attachment: fixed;
   background-position: center;
@@ -168,7 +168,7 @@ img{
 .text{
   align-self: center;
   justify-content: center;
-  max-height: 25%;
+  max-height: 25vh;
   overflow: scroll;
 }
 
@@ -186,8 +186,8 @@ img{
 
   
   /* Requirements 12-15 here: */
-  a.skip{
-    right: 0px;
+  a.skip:focus{
+    left: 0px;
     top:20px;
   }
 
@@ -208,6 +208,10 @@ img{
   .about-image,
   .method-image{
     grid-column: 2/4;
+  }
+
+  img{
+    max-height: 300px;
   }
 }
 
